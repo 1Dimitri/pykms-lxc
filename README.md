@@ -28,6 +28,7 @@ This version of _py-kms_ is for itself a fork of the original implementation by 
 	- Windows Server 2016
 	- Windows Server 2019
 	- Windows Server 2022
+        - Windows Server 2025
 	- Microsoft Office 2010 ( Volume License )
 	- Microsoft Office 2013 ( Volume License )
 	- Microsoft Office 2016 ( Volume License )
