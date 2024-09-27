@@ -19,7 +19,8 @@ Updateed by me
 	- Windows Server 2016
 	- Windows Server 2019
 	- Windows Server 2022
-        - Windows Server 2025
+ 	- Windows Server 2025 (updated 20-09-2024)
+   
 	- Microsoft Office 2010 ( Volume License )
 	- Microsoft Office 2013 ( Volume License )
 	- Microsoft Office 2016 ( Volume License )
