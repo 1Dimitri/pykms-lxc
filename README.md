@@ -1,6 +1,5 @@
 # Readme
 Folked from https://github.com/Py-KMS-Organization/py-kms
-Updateed by me
 
 ## Features
 - Responds to `v4`, `v5`, and `v6` KMS requests.
