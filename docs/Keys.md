@@ -3,7 +3,9 @@ These are keys, which can be used to activate a product with _py-kms_ (note this
 sometimes even reject it by itself (often due too many uses - in that case try to use an other one).
 
 slmgr /ipk <key>
+
 slmgr /skms <server>:1688
+
 slmgr /ato
 
 ## Windows
