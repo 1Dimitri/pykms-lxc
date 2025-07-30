@@ -8,6 +8,12 @@ slmgr /skms server:1688
 
 slmgr /ato
 
+slmgr /dli
+
+slmgr /dlv
+
+slmgr /xpr
+
 ## Windows
 
 ### Windows Server 2025
