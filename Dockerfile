@@ -53,3 +53,7 @@ EXPOSE 8080/tcp
 HEALTHCHECK --interval=5m --timeout=10s --start-period=10s --retries=3 CMD /usr/bin/python3 /usr/bin/healthcheck.py
 
 ENTRYPOINT [ "/usr/bin/python3", "-u", "/usr/bin/entrypoint.py" ]
+
+#docker buildx create --use
+#sudo apt install docker-buildx
+#docker buildx build --push --platform=linux/arm64,linux/amd64 --tag h2372/py-kms .
