@@ -4,20 +4,20 @@ FROM alpine
 ARG BUILD_COMMIT=unknown
 ARG BUILD_BRANCH=unknown
 
-ENV IP ::
-ENV DUALSTACK 1
-ENV PORT 1688
-ENV EPID ""
-ENV LCID 1033
-ENV CLIENT_COUNT 26
-ENV ACTIVATION_INTERVAL 120
-ENV RENEWAL_INTERVAL 10080
-ENV HWID RANDOM
-ENV LOGLEVEL INFO
-ENV LOGFILE STDOUT
-ENV LOGSIZE ""
-ENV TZ Asia/Ho_Chi_Minh
-ENV WEBUI 1
+ENV IP=::
+ENV DUALSTACK=1
+ENV PORT=1688
+ENV EPID=""
+ENV LCID=1033
+ENV CLIENT_COUNT=26
+ENV ACTIVATION_INTERVAL=120
+ENV RENEWAL_INTERVAL=10080
+ENV HWID=RANDOM
+ENV LOGLEVEL=INFO
+ENV LOGFILE=STDOUT
+ENV LOGSIZE=""
+ENV TZ=Asia/Ho_Chi_Minh
+ENV WEBUI=1
 
 COPY docker/docker-py3-kms/requirements.txt /home/py-kms/
 RUN apk add --no-cache --update \
@@ -28,7 +28,7 @@ RUN apk add --no-cache --update \
   ca-certificates \
   tzdata \
   shadow \
-  && pip3 install --no-cache-dir -r /home/py-kms/requirements.txt \
+  && pip3 install --no-cache-dir -r /home/py-kms/requirements.txt --break-system-packages \
   && mkdir /db/ \
   && adduser -S py-kms -G users -s /bin/bash \
   && chown py-kms:users /home/py-kms \
