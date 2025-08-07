@@ -16,7 +16,7 @@ ENV HWID RANDOM
 ENV LOGLEVEL INFO
 ENV LOGFILE STDOUT
 ENV LOGSIZE ""
-ENV TZ America/Chicago
+ENV TZ Asia/Ho_Chi_Minh
 ENV WEBUI 1
 
 COPY docker/docker-py3-kms/requirements.txt /home/py-kms/
