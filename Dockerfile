@@ -1,5 +1,5 @@
 # Switch to the target image
-FROM alpine:3.15
+FROM alpine
 
 ARG BUILD_COMMIT=unknown
 ARG BUILD_BRANCH=unknown
