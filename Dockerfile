@@ -33,7 +33,7 @@ RUN apk add --no-cache --update \
   && adduser -S py-kms -G users -s /bin/bash \
   && chown py-kms:users /home/py-kms \
   # Fix undefined timezone, in case the user did not mount the /etc/localtime
-  && ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+  && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime
 
 COPY py-kms /home/py-kms/
 COPY docker/entrypoint.py /usr/bin/entrypoint.py
