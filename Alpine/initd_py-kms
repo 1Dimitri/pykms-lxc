@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+name="$SVCNAME"
+command_background=true
+command="/usr/local/share/$SVCNAME/pykms_Server.py"
+command_args="0.0.0.0 1688 -V DEBUG -F /var/log/$SVCNAME.log"
+pidfile="/var/run/$SVCNAME.pid"
+
+depend() {
+        need net
+        after firewall
+}
